@@ -42,14 +42,12 @@
             <div>
                 <img src="<c:out value="${product.image}"/>" />
                 <div>><c:out value="${product.name}"/></div>
-                <a href="AddToShoppingCart?product=<%=product.getName() %>" class="btn btn-default" >
+                <a  href="AddToShoppingCart?product=<c:out value="${product.name}"/>"class="btn btn-default">
                 <c:out value="${product.price}"/> €
                 </a>
             </div>
         </div>
-        <%
-            }
-        %>
+        </c:forEach>
     </div>
 </div>
 </body>
