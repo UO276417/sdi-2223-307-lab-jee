@@ -38,6 +38,9 @@
       <tr>
         <li>${item.key} - ${item.value} </li>
       </tr>
+      <a  href="ServletDeleteCart?product=<c:out value="${item.key}"/>"class="btn btn-default">
+        <p>Eliminar</p>
+      </a>
     </c:forEach>
   </ul>
   <a href="index.jsp">Volver</a>
